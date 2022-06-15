@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Related Records" >
+        <div>
+            <span class="slds-form-element__label slds-text-title_bold">
+            Total Records: {totalRecords}</span>
+        </div>
+        <div>
+            <span class="slds-form-element__label slds-text-title_bold">
+                Displayed Records: {data.length}</span>
+        </div>
+        <template if:true={data.length}>
+            <div style="height: 300px;">
+                <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    enable-infinite-loading
+                    onloadmore={onLoadMoreHandler}>
+                </lightning-datatable>
+            </div>
+        </template>
+        <div>
+            <span class="slds-form-element__label slds-text-title_bold">{loadMoreStatus}</span>
+        </div>
+    </lightning-card>
+</template>

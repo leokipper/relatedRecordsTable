@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>RelatedRecordsTableController</members>
+		<members>RelatedRecordsTableControllerTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>B__c.A__c</members>
+		<members>C__c.B__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>A__c</members>
+		<members>B__c</members>
+		<members>C__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>A__c</members>
+		<members>B__c</members>
+		<members>C__c</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>A_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>A__c-A Layout</members>
+		<members>B__c-B Layout</members>
+		<members>C__c-C Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>relatedRecordsTable</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>55.0</version>
+</Package>
